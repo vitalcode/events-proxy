@@ -5,4 +5,4 @@ certbot certonly --standalone --non-interactive --agree-tos --email vitaliy@vita
     -d fillyourday.com \
     -d www.fillyourday.com
 
-nginx -g daemon off;
+nginx -g "daemon off;"
