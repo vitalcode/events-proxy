@@ -8,8 +8,4 @@ RUN apt-get update && \
 RUN mkdir -p /var/www/fillyourday
 
 COPY ./app.conf /etc/nginx/conf.d/
-COPY ./start.sh .
-
-RUN chmod +x ./start.sh
-
-CMD ["./start.sh"]
+COPY ./cert/ /etc/letsencrypt/live/fillyourday.com/
