@@ -1,3 +1,5 @@
 # events-proxy
 
-docker run -it -p 443:443 vitalcode/events-proxy --certbot /bin/bash
+docker run --name proxy -it -p 443:443 vitalcode/events-proxy --certbot
+
+/etc/letsencrypt/live/fillyourday.com/
