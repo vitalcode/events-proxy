@@ -9,3 +9,8 @@ RUN mkdir -p /var/www/fillyourday
 
 COPY ./app.conf /etc/nginx/conf.d/
 COPY ./cert/ /etc/letsencrypt/live/fillyourday.com/
+COPY ./start.sh .
+
+RUN chmod +x ./start.sh
+
+ENTRYPOINT ["./start.sh"]
