@@ -10,6 +10,6 @@ if [ "$1" = "--certbot" ]; then
         -d graphiql.fillyourday.com \
         -d es.fillyourday.com \
         -d db.fillyourday.com
+else
+    nginx -g "daemon off;"
 fi
-
-nginx -g "daemon off;"
