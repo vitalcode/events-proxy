@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" = "--certbot" ]; then
-    rm /etc/letsencrypt/live/fillyourday.com/*.pem
+    rm -R /etc/letsencrypt
     certbot certonly --standalone --non-interactive --agree-tos --email vitaliy.kuznetsov@yahoo.co.uk \
         -w /var/www/fillyourday \
         -d fillyourday.com \
