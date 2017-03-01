@@ -1,5 +1,8 @@
 #!/bin/bash
 
+htpasswd -b -c /etc/nginx/.htpasswd user10 password10
+
+
 if [ "$1" = "--certbot" ]; then
     rm -R /etc/letsencrypt
     certbot certonly --standalone --non-interactive --agree-tos --email vitaliy.kuznetsov@yahoo.co.uk \
