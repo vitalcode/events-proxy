@@ -8,6 +8,7 @@ if [ "$1" = "--certbot" ]; then
         -w /var/www/fillyourday \
         -d fillyourday.com \
         -d www.fillyourday.com \
+        -d swarm.fillyourday.com \
         -d api.fillyourday.com \
         -d graphiql.fillyourday.com \
         -d es.fillyourday.com \
